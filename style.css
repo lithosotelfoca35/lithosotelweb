@@ -1,0 +1,875 @@
+/* ===========================
+   LITHOS OTEL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#f6f2ea;
+    color:#2d2d2d;
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+.navbar{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:9999;
+
+    background:rgba(35,35,35,.45);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+.logo{
+
+    font-size:34px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    letter-spacing:8px;
+
+    color:#6b5731;
+
+    font-weight:bold;
+
+}
+
+.navbar ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+.navbar a{
+
+    color:#333;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:#b08a3e;
+
+}
+
+/* ===========================
+ HERO
+=========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:50px;
+
+    padding:120px 5% 60px;
+
+    flex-wrap:wrap;
+
+}
+
+.hero-left h1,
+.hero-right h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:95px;
+
+    color:#b08a3e;
+
+    letter-spacing:10px;
+
+}
+
+.hero-center{
+
+    text-align:center;
+
+}
+
+.hero-center img{
+
+    width:620px;
+
+    max-width:95vw;
+
+    border-radius:18px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+
+   transition:.5s ease;
+
+cursor:pointer;
+
+}
+
+.hero-center img:hover{
+
+    transform:scale(1.02);
+
+}
+
+.hero-center h2{
+
+    margin-top:30px;
+
+    font-size:28px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    color:#444;
+
+}
+
+.buttons{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.buttons a{
+
+    padding:15px 32px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.buttons a:first-child{
+
+    background:#2f6b4f;
+
+}
+
+.buttons a:last-child{
+
+    background:#c13584;
+
+}
+
+.buttons a:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.18);
+
+}
+
+/* ===========================
+ HAKKIMIZDA
+=========================== */
+
+.about{
+
+    width:min(900px,90%);
+
+    margin:90px auto;
+
+    text-align:center;
+
+}
+
+.about h2{
+
+    font-size:52px;
+
+    margin-bottom:25px;
+
+    color:#6b5731;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.about p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#555;
+
+}
+
+/* ===========================
+ MOBİL
+=========================== */
+
+@media(max-width:900px){
+
+.hero{
+
+    flex-direction:column;
+
+}
+
+.hero-left h1,
+.hero-right h1{
+
+    font-size:55px;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+}
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.navbar ul{
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero-center h2{
+
+    font-size:22px;
+
+}
+
+}
+/*=====================
+ODALAR
+=====================*/
+
+.rooms{
+
+    width:min(1200px,90%);
+    margin:120px auto;
+
+}
+
+.rooms h2{
+
+    text-align:center;
+    font-size:52px;
+    color:#6b5731;
+    margin-bottom:50px;
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.room-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+    gap:40px;
+
+}
+
+.room-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.room-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.room-card img{
+
+    width:100%;
+
+    height:280px;
+
+    object-fit:cover;
+
+}
+
+.room-content{
+
+    padding:30px;
+
+}
+
+.room-content h3{
+
+    font-size:34px;
+
+    color:#6b5731;
+
+    margin-bottom:15px;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.room-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+.room-content ul{
+
+    list-style:none;
+
+    display:grid;
+
+    gap:10px;
+
+}
+
+.room-content li{
+
+    font-size:17px;
+
+}
+/*=========================
+NEDEN LITHOS
+=========================*/
+
+.features{
+
+    background:#ffffff;
+
+    padding:100px 8%;
+
+}
+
+.features h2{
+
+    text-align:center;
+
+    font-size:52px;
+
+    color:#6b5731;
+
+    margin-bottom:60px;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:30px;
+
+}
+
+.feature-card{
+
+    background:#f8f5ef;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.icon{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h3{
+
+    color:#6b5731;
+
+    margin-bottom:15px;
+
+    font-size:28px;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.feature-card p{
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+/*=====================
+LIGHTBOX
+=====================*/
+
+.lightbox{
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.92);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+}
+
+.lightbox img{
+
+    width:90%;
+
+    max-width:1000px;
+
+    border-radius:15px;
+
+}
+
+.close{
+
+    position:absolute;
+
+    right:40px;
+
+    top:20px;
+
+    color:white;
+
+    font-size:50px;
+
+    cursor:pointer;
+
+}
+/*=========================
+HERO GÜNCELLEME
+=========================*/
+
+.hero-center{
+
+    position:relative;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:120px;
+
+    transform:translateX(-50%);
+
+    width:90%;
+
+    text-align:center;
+
+}
+
+.hero-subtitle{
+
+    color:white;
+
+    font-size:38px;
+
+    font-family:'Cormorant Garamond',serif;
+
+    text-shadow:0 5px 20px rgba(0,0,0,.7);
+
+}
+
+.hero-center img{
+
+    filter:brightness(.82);
+
+}
+/*=========================
+V2 HERO
+=========================*/
+
+.hero-small{
+
+    display:block;
+
+    color:#d8b46a;
+
+    letter-spacing:8px;
+
+    font-size:14px;
+
+    margin-bottom:10px;
+
+}
+
+.hero-location{
+
+    margin-top:15px;
+
+    color:white;
+
+    letter-spacing:4px;
+
+    font-size:15px;
+
+    opacity:.8;
+
+}
+
+.hero-center img{
+
+    border-radius:25px;
+
+    box-shadow:0 30px 60px rgba(0,0,0,.35);
+
+}
+
+.hero-center img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.buttons a{
+
+    transition:.35s;
+
+}
+
+.buttons a:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+
+}
+/*=========================
+GÖRÜŞ & ÖNERİ
+=========================*/
+
+.contact-section{
+
+    width:min(850px,90%);
+
+    margin:120px auto;
+
+    text-align:center;
+
+}
+
+.contact-section h2{
+
+    font-size:52px;
+
+    color:#6b5731;
+
+    margin-bottom:15px;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.contact-text{
+
+    color:#666;
+
+    margin-bottom:40px;
+
+    line-height:1.8;
+
+}
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:18px;
+
+    border:1px solid #d7c7a7;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-family:'Poppins',sans-serif;
+
+    background:white;
+
+    transition:.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    outline:none;
+
+    border-color:#b08a3e;
+
+    box-shadow:0 0 12px rgba(176,138,62,.2);
+
+}
+
+.contact-form button{
+
+    background:#6b5731;
+
+    color:white;
+
+    border:none;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+    background:#8b7142;
+
+    transform:translateY(-3px);
+
+}
+/*=========================
+GÖRÜŞ & ÖNERİ
+=========================*/
+
+.contact-section{
+
+    width:min(850px,90%);
+
+    margin:120px auto;
+
+    text-align:center;
+
+}
+
+.contact-section h2{
+
+    font-size:50px;
+
+    color:#6b5731;
+
+    margin-bottom:15px;
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+.contact-text{
+
+    color:#666;
+
+    margin-bottom:35px;
+
+    line-height:1.8;
+
+}
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:18px;
+
+    border:1px solid #d8c7a4;
+
+    border-radius:12px;
+
+    background:white;
+
+    font-size:16px;
+
+    font-family:'Poppins',sans-serif;
+
+    transition:.3s;
+
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    outline:none;
+
+    border-color:#b08a3e;
+
+    box-shadow:0 0 15px rgba(176,138,62,.2);
+
+}
+
+.contact-form button{
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#6b5731;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.contact-form button:hover{
+
+    background:#8a7144;
+
+    transform:translateY(-3px);
+
+}
+
+.success-message{
+
+    display:none;
+
+    margin-top:30px;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    background:#dff6df;
+
+    color:#2e6d2e;
+
+    font-weight:600;
+
+}
