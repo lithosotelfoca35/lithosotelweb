@@ -978,16 +978,30 @@ GÖRÜŞ & ÖNERİ
     }
 
 }
-<footer class="site-footer">
+   background:#111;
+    color:#8f8f8f;
+    text-align:center;
+    padding:18px 15px;
+    margin-top:40px;
+}
 
-    <p>©️ 2026 Lithos Otel. Tüm hakları saklıdır.</p>
+.site-footer p{
+    margin:3px 0;
+    font-size:11px;
+    letter-spacing:.5px;
+}
 
-    <p class="developer">
-        Website by
-        <a href="https://www.instagram.com/ozankrbck14?igsh=MWwzamozMTJ3aHBmYQ%3D%3D&utm_source=qr"
-           target="_blank" rel="noopener noreferrer">
-            Ozan Karabacak
-        </a>
-    </p>
+.developer{
+    font-size:10px;
+    color:#666;
+}
 
-</footer>
+.developer a{
+    color:#a88d3b;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.developer a:hover{
+    color:#d4af37;
+}
