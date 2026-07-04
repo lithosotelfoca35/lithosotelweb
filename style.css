@@ -956,3 +956,25 @@ GÖRÜŞ & ÖNERİ
 .google-btn:hover{
     transform:scale(1.05);
 }
+/* Telefon görünümü */
+.reviews-mobile-image{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    .reviews{
+        background:none !important;
+        padding-top:0;
+    }
+
+    .reviews-mobile-image{
+        display:block;
+        width:100%;
+        height:auto;
+        object-fit:contain;
+        border-radius:0;
+        margin-bottom:25px;
+    }
+
+}
