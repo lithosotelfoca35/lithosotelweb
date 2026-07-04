@@ -992,8 +992,13 @@ GÖRÜŞ & ÖNERİ
 }
 
 .developer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:5px;
     font-size:10px;
     color:#666;
+    margin-top:5px;
 }
 
 .developer a{
