@@ -64,3 +64,29 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+const months = [
+    "OCAK",
+    "ŞUBAT",
+    "MART",
+    "NİSAN",
+    "MAYIS",
+    "HAZİRAN",
+    "TEMMUZ",
+    "AĞUSTOS",
+    "EYLÜL",
+    "EKİM",
+    "KASIM",
+    "ARALIK"
+];
+
+function updateCalendar() {
+
+    const today = new Date();
+
+    document.getElementById("calendar-day").textContent = today.getDate();
+
+    document.getElementById("calendar-month").textContent =
+        months[today.getMonth()];
+}
+
+updateCalendar();
