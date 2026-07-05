@@ -1010,3 +1010,71 @@ GÖRÜŞ & ÖNERİ
 .developer a:hover{
     color:#d4af37;
 }
+.ets-button{ 
+background:#d4af37; 
+color:white !important; 
+padding:8px 18px; 
+border-radius:30px; 
+transition:.3s; 
+font-weight:600; 
+}
+
+.ets-button:hover{ 
+background:#b7922c; 
+transform:translateY(-2px); 
+}
+.reservation-card{
+
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.reservation-content{
+
+text-align:center;
+padding:30px;
+}
+
+.reservation-icon{
+
+font-size:50px;
+margin-bottom:20px;
+}
+
+.reservation-content h3{
+
+margin-bottom:15px;
+}
+
+.reservation-content p{
+
+line-height:1.8;
+margin-bottom:25px;
+}
+
+.reservation-btn{
+
+display:inline-block;
+background:#d4af37;
+color:white;
+padding:14px 28px;
+border-radius:35px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.reservation-btn:hover{
+
+background:#b7922c;
+transform:translateY(-3px);
+}
+
+.reservation-content small{
+
+display:block;
+margin-top:20px;
+color:#777;
+font-size:12px;
+}
