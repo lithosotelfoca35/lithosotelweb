@@ -324,12 +324,10 @@ ODALAR
 
 }
 
-.room-container{
-
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:40px;
-
+.room-container{ 
+display: grid; 
+grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); 
+gap: 40px; 
 }
 
 .room-card{
@@ -1078,4 +1076,17 @@ display:block;
 margin-top:20px;
 color:#777;
 font-size:12px;
+}
+/* Çapa + Rezervasyon kartı */ 
+.room-row{ 
+display: grid; 
+grid-template-columns: 360px 1fr; 
+gap: 40px; 
+align-items: stretch; 
+}
+
+@media (max-width:768px){ 
+.room-row{ 
+grid-template-columns: 1fr; 
+} 
 }
