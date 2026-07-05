@@ -1028,6 +1028,7 @@ transform:translateY(-2px);
 display:flex;
 justify-content:center;
 align-items:center;
+height:100%;   
 }
 
 .reservation-content{
